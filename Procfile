@@ -1,1 +1,1 @@
-web: gunicorn aircarriers.wsgi
+web: gunicorn django_project.aircarriers.wsgi

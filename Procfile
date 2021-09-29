@@ -1,1 +1,1 @@
-web: gunicorn aircarriers.wsgi
+web: gunicorn aircarriers.wsgi --log-file -

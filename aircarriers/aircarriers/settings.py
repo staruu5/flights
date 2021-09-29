@@ -83,10 +83,15 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'demo',
         'USER': 'postgres',
-        'PASSWORD': 'postgres',
+        'PASSWORD': '55555',
         'HOST': 'localhost',
         'PORT': '5432',
+        'OPTIONS': {
+            'options': '-c search_path=bookings'
+        },
+
     }
+
 }
 # DATABASES = {
 #     'default': {
@@ -132,6 +137,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
 # Default primary key field type

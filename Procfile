@@ -1,1 +1,1 @@
-web: gunicorn aircarriers.aircarriers.wsgi:carriers
+web: gunicorn aircarriers.wsgi
